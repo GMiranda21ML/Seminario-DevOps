@@ -119,7 +119,7 @@ footer {
 .content-section h2 {
     text-align: center;
     margin-bottom: 2rem;
-    color: #333;
+    color: #00ff9d;
 }
 
 .image-grid {
@@ -238,4 +238,60 @@ footer {
     font-size: 1.1em;
     line-height: 1.6;
     margin-bottom: 2rem;
+}
+
+/* Downtime Section Styles */
+.downtime-container {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.content-text {
+    flex: 1;
+}
+
+.content-text p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.content-image {
+    flex: 1;
+}
+
+.feature-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 255, 157, 0.2);
+}
+
+/* Responsive Design for Downtime */
+@media (max-width: 768px) {
+    .downtime-container {
+        flex-direction: column;
+    }
+    
+    .content-image {
+        order: -1;
+    }
+}
+
+.vertical-layout {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.vertical-layout .content-image {
+    margin-bottom: 2rem;
+}
+
+.vertical-layout .content-text {
+    max-width: 800px;
 }
