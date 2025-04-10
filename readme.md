@@ -1,6 +1,6 @@
 # Seminário sobre DevOps
 
-Escolhemos o tema **DevOps** por ser um assunto que nos desperta interesse. Como um complemento ao nosso seminário, decidimos desenvolver um site abordando o tema, unindo teoria e prática de forma mais interativa.
+Escolhemos o tema **DevOps** por ser um assunto que nos desperta interesse. Como um complemento ao nosso seminário, decidimos desenvolver um site sobre **DevOps**
 
 ## Membros do Grupo
 
