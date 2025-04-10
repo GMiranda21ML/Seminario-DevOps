@@ -11,4 +11,14 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+    
+    // Make images editable
+    document.querySelectorAll('.editable-image').forEach(img => {
+        img.addEventListener('click', function() {
+            const newSrc = prompt('Enter the URL for the new image:');
+            if (newSrc) {
+                this.src = newSrc;
+            }
+        });
+    });
 });

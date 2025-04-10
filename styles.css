@@ -104,3 +104,96 @@ footer {
         justify-content: center;
     }
 }
+
+/* Time Between Releases Section */
+.content-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.image-slot {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(0, 255, 191);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.image-slot:hover {
+    transform: translateY(-5px);
+}
+
+.editable-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.text-content {
+    padding: 1.5rem;
+}
+
+.text-content h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.text-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+/* Time Between Releases specific styles */
+#time-between-releases h2 {
+    color: #00ff9d;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#time-between-releases .image-slot {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
+}
+
+#time-between-releases h3 {
+    color: #333;
+}
+
+#time-between-releases .text-content p {
+    color: #666;
+}
+
+#time-between-releases .image-slot:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+#time-between-releases .intro-text p {
+    color: #cccccc;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
