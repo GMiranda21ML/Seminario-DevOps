@@ -1,6 +1,6 @@
 # Seminário sobre DevOps
 
-Escolhemos o tema **DevOps** por ser um assunto que nos desperta interesse. Como um complemento ao nosso seminário, decidimos desenvolver um site com o conteudo da apresentação
+Escolhemos o tema **DevOps** por ser um assunto que nos desperta interesse. Como um complemento ao nosso seminário, decidimos desenvolver um site com o conteudo da apresentação.
 ## Membros do Grupo
 
 - André Avelino Freitas de Oliveira  
