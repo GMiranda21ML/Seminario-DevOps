@@ -327,26 +327,23 @@ footer {
 }
 
 .scoped-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     align-items: center;
 }
 
 .scoped-text {
+    width: 100%;
     padding: 2rem;
     background: rgba(0, 255, 157, 0.05);
     border-radius: 15px;
     border-left: 4px solid #00ff9d;
 }
 
-.scoped-text p {
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
-}
-
 .scoped-image {
     width: 100%;
+    max-width: 800px;
     height: auto;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 255, 157, 0.2);
@@ -354,14 +351,18 @@ footer {
 
 @media (max-width: 768px) {
     .scoped-content {
-        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
     
     .scoped-image {
-        order: -1;
+        width: 100%;
     }
 }
 
+.scoped-text p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
 /* Members Section Styles */
 .members-grid {
     display: grid;
