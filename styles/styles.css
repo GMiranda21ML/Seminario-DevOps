@@ -254,10 +254,14 @@ footer {
     flex: 1;
 }
 
+.content-text h4 {
+    color: #00ff9d;
+}
+
 .content-text p {
     margin-bottom: 1.5rem;
     line-height: 1.6;
-    color: #cccccc;
+    color: #ffffff;
 }
 
 .content-image {
@@ -398,4 +402,68 @@ footer {
 
 .member-info p {
     color: #cccccc;
+}
+
+.conclusion-container {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+}
+
+.conclusion-container h2 {
+    color: #00ff9d;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.conclusion-container h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: #00ff9d;
+}
+
+.conclusion-content {
+    background: rgba(0, 255, 157, 0.05);
+    padding: 2rem;
+    border-radius: 15px;
+    border-left: 4px solid #00ff9d;
+}
+
+.conclusion-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.conclusion-content ul {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+    list-style-type: none;
+}
+
+.conclusion-content ul li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.conclusion-content ul li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #00ff9d;
+}
+
+@media (max-width: 768px) {
+    .conclusion-container {
+        padding: 1rem;
+        margin: 2rem auto;
+    }
 }

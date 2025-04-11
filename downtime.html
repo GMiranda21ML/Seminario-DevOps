@@ -1,46 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Downtime - DevOps Grupo 6</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Grupo 6</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Introdução</a></li>
-                <li><a href="timeToRelease.html">Time to Release</a></li>
-                <li><a href="downtime.html">Downtime</a></li>
-                <li><a href="timeBetweenReleases.html">Time Between Releases</a></li>
-                <li><a href="scopedRelease.html">Scoped Release</a></li>
-                <li><a href="membros.html">Membros</a></li>
-                <li><a href="#">Conclusão</a></li>
-            </ul>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Downtime - DevOps Grupo 6</title>
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Grupo 6</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Introdução</a></li>
+                    <li><a href="timeToRelease.html">Time to Release</a></li>
+                    <li><a href="downtime.html">Downtime</a></li>
+                    <li><a href="timeBetweenReleases.html">Time Between Releases</a></li>
+                    <li><a href="scopedRelease.html">Scoped Release</a></li>
+                    <li><a href="conclusao.html">Conclusão</a></li>
+                    <li><a href="membros.html">Membros</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <section id="downtime" class="content-section">
-            <h2>Downtime</h2>
-            <div class="downtime-container vertical-layout">
-                <div class="content-image">
-                    <img src="downtime-image.jpg" alt="Downtime Visualization" class="feature-image">
+        <main>
+            <section id="downtime" class="content-section">
+                <h2>Downtime</h2>
+                <div class="downtime-container vertical-layout">
+                    <div class="content-image">
+                        <img src="img/downtime.jpg" alt="Downtime Visualization" class="feature-image">
+                    </div>
+                    <div class="content-text">
+                        <h4>Introdução:</h4>
+                        <p>
+                            Downtime é uma métrica do DevOps que diz respeito ao tempo em que um sistema está interrompido, ou fora do ar como dizemos.
+                            Esse período de interrupção pode ou não ser intencional, o que pode gerar prejuízos ou custos de manutenção à empresa a depender das áreas afetadas.
+                            Exemplo não intencional - Amazon S3 2017, prejuízos a empresas que viram seus servidores fora do ar por 4 horas
+                            Exemplo intencional - Manutenções de um sistema de um hospital
+                            Também existe o uptime, que diz respeito ao tempo que o sistema está ativo.
+                        </p>
+                        <h4>Causas:</h4>
+                        <p>
+                            O downtime pode ser causado por diversos fatores. 
+                            Falhas de infraestrutura, como queda de energia, falha de hardware ou problemas de rede, são comuns. 
+                            Bugs e erros de código, como erros não tratados, memory leaks e race conditions, também afetam a estabilidade. 
+                            Problemas durante atualizações ou deploys, como código com falhas ou configurações incorretas, podem interromper o serviço. 
+                            Serviços externos, como APIs ou bancos de dados fora do ar, impactam diretamente o sistema. 
+                            O erro humano, por alterações manuais em produção, má configuração ou comandos errados, é outra causa frequente. 
+                            A manutenção programada, quando mal comunicada ou demorada, também pode gerar indisponibilidade. Além disso, ataques e falhas de segurança, como DDoS ou problemas de autenticação, e a sobrecarga de tráfego, por excesso de usuários ou troca de dados além do limite, contribuem para o downtime.
+                        </p>
+                        <h4>Medidas:</h4>
+                        <p>
+                            Para lidar com o downtime, utilizam-se diferentes métricas e estratégias. 
+                            O monitoramento contínuo realiza checagens periódicas e calcula a razão entre falhas e o total de verificações. 
+                            A análise ponderada avalia o impacto com base na criticidade do serviço afetado, atribuindo pesos diferentes (ex: API pública = 3, admin = 1). O MTRR (Mean Time to Recovery) mede o tempo necessário para recuperar o serviço após uma falha. 
+                            Já o downtime por SLA violado considera não apenas o tempo fora do ar, mas também a perda de qualidade em serviços que continuaram ativos.
+                        </p>
+                        <h4>Ferramentas:</h4>
+                        <p>
+                            Diversas ferramentas auxiliam no monitoramento e prevenção de downtime. 
+                            O Datadog é voltado para equipes de DevOps e SRE, oferecendo monitoramento de infraestrutura, 
+                            APM (Application Performance Monitoring), dashboards personalizáveis e detecção automática de falhas. 
+                            O Pingdom (SolarWinds) é focado em aplicações web, com alertas por e-mail, 
+                            monitoramento de transações, análise de performance de páginas e visualização de uptime por região. 
+                            Já a combinação Prometheus + Grafana, sendo open source, permite emissão de alertas, dashboards interativos e detecção automática de downtimes.
+                        </p>
+                    </div>
                 </div>
-                <div class="content-text">
-                    <p>O downtime, ou tempo de inatividade, é um indicador crítico que mede o período em que um sistema, serviço ou aplicação fica indisponível para os usuários. Em DevOps, minimizar o downtime é essencial para manter a confiabilidade e a satisfação do usuário.</p>
-                    <p>A implementação de práticas DevOps adequadas, como deployments automatizados, monitoramento contínuo e estratégias de rollback eficientes, ajuda a reduzir significativamente o tempo de inatividade não planejado.</p>
-                </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <footer>
-        <p>&copy; 2023 Grupo 6 - DevOps. Todos os direitos reservados.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2023 Grupo 6 - DevOps. Todos os direitos reservados.</p>
+        </footer>
 
-    <script src="script.js"></script>
-</body>
+        <script src="scripts/script.js"></script>
+    </body>
 </html>
