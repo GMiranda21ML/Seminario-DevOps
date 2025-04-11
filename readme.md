@@ -9,6 +9,7 @@ Escolhemos o tema **DevOps** por ser um assunto que nos desperta interesse. Como
 - Gabriel Aniceto De Sousa Alencar Barros  
 - Gabriel Miranda Mucarbel de Lima  
 - João Vitor Assumpção Passos  
-- Lucas Berenguer Avelino de Souza  
+- Lucas Berenguer Avelino de Souza 
+- Mircio Ferreira Dos Santos Neto 
 - Ricardo Sérgio de Paula Freitas Filho  
 - Thiago Fernandes de Medeiros  
