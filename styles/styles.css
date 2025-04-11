@@ -147,6 +147,21 @@ footer {
     box-shadow: 0 2px 8px rgb(0, 255, 191);
     overflow: hidden;
     transition: transform 0.3s ease;
+    min-height: 200px;
+}
+
+.image-slot .text-content {
+    padding: 2rem;
+}
+
+.image-slot .text-content h3 {
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.image-slot .text-content p {
+    color: #333333;
+    line-height: 1.6;
 }
 
 .image-slot:hover {
